@@ -87,7 +87,7 @@ https://turu.thuniverse.ai/download/turu-25h1-wos/
    ```bash
    python -m venv venv
    # Windows
-   venv\Scriptsctivate
+   venv\Scripts\activate
    pip install -r requirements.txt   # fastapi uvicorn pydub python-multipart etc.
    ```
 2. Install ffmpeg and ensure it’s in the PATH (required by pydub).
