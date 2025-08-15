@@ -4,3 +4,5 @@ pydub
 numpy
 openai-whisper
 python-multipart
+qai_hub_models
+qai-hub-models[whisper-large-v3-turbo]
