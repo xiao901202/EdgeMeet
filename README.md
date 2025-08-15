@@ -1,42 +1,44 @@
-# EdgeMeet (Under develop)
 
-This app(EdgeMeet) is provided as an offline AI meeting assistant sample, built using fine-tuned Whisper speech-to-text (ASR) and Llama 3.1 TAIDE summarization models. The application runs fully on-device, ensuring no cloud transmission and complete control over sensitive meeting data.
+# EdgeMeet (Under Development)
+![EdgeMeet Logo](public/images/Logo.png)
 
-On Snapdragon X Elite, the models are optimized to leverage the Neural Processing Unit (NPU) for low-latency inference. The ASR supports multiple languages, including Chinese, English, and Taiwanese Hokkien, delivering accurate transcriptions and concise summaries in real time. Elsewhere, the models will run on the CPU.
+This app (EdgeMeet) is provided as an offline AI meeting assistant sample, built using fine-tuned Whisper speech-to-text (ASR) and Llama 3.1 TAIDE summarization models. The application runs fully on-device, ensuring no cloud transmission and complete control over sensitive meeting data.
 
-This project was developed for the Qualcomm Edge AI Developer Hackathon.
+On Snapdragon X Elite, the models are optimized to leverage the Neural Processing Unit (NPU) for low-latency inference. The ASR supports multiple languages, including Chinese, English, and Taiwanese Hokkien, delivering accurate transcriptions and concise summaries in real-time. Elsewhere, the models will run on the CPU.
 
----
+This project was developed for the **Qualcomm Edge AI Developer Hackathon**.
+
+
 ## Preview
 
 ![EdgeMeet Preview](public/images/preview.png)
 
----
-## 目錄
 
-- [功能特色](#功能特色)
-- [專案結構](#專案結構)
-- [快速開始](#快速開始)
-- [後端-api](#後端-api)
-- [資料格式](#資料格式)
-- [前端關鍵檔案與流程](#前端關鍵檔案與流程)
-- [設定](#設定)
+## Table of Contents
 
----
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Quick Start](#quick-start)
+- [Backend API](#backend-api)
+- [Data Formats](#data-formats)
+- [Frontend Key Files and Flow](#frontend-key-files-and-flow)
+- [Configuration](#configuration)
 
-## 功能特色
 
-- 🎙️ **錄音（NAudio）**：裝置選擇、開始/停止、播放、拖曳跳段、播放進度同步  
-- ⚡ **即時上傳**：每 20s 上傳一次（與前段 **2s overlap**）  
-- 🧩 **即時摘要**：上傳成功後 **延遲 1 秒** 讀取 `/summary`，只取 `per_segment` **最大 index** 為當前段摘要  
-- 🧾 **完整輸出**：停止錄音 → 串接 `stream_chunks/` 得 `base.wav` → **記憶體切段** → 覆蓋 `transcript.json` / `summary.json`  
-- 🧠 **智慧摘要顯示**：錄音/播放中顯示「本段摘要」，其他時候顯示「整體摘要」
 
----
+## Features
 
-## 專案結構
+- 🎙️ **Recording (NAudio)**: Device selection, start/stop, playback, segment seeking, and playback progress synchronization.  
+- ⚡ **Real-time Upload**: Uploads every 20 seconds (with a **2s overlap** with the previous segment).  
+- 🧩 **Real-time Summarization**: After successful upload, **delays 1 second** to read `/summary` and only takes the maximum index from `per_segment` for the current segment's summary.  
+- 🧾 **Full Output**: After stopping the recording → connects `stream_chunks/` → generates `base.wav` → **memory segmentation** → overwrites `transcript.json` / `summary.json`.  
+- 🧠 **Smart Summary Display**: Displays "current segment summary" while recording/playing, and "overall summary" at other times.
 
-### 前端（WinUI 3）
+
+
+## Project Structure
+
+### Frontend (WinUI 3)
 
 ```text
 ConferenceAssistant/
@@ -55,69 +57,68 @@ ConferenceAssistant/
 └─ MainWindow.xaml(.cs)
 ```
 
-### 後端（FastAPI）
+### Backend (FastAPI)
 
 ```text
 app/
-├─ main.py # FastAPI app 入口
-├─ routes.py # /uploads 靜態、範例路由
-├─ schemas.py # Pydantic 模型
-└─ transcribe.py # 轉錄/摘要 API（ingest_chunk / finalize_stream / summary ...）
+├─ main.py # FastAPI app entry point
+├─ routes.py # Static and example routes for `/uploads`
+├─ schemas.py # Pydantic models
+└─ transcribe.py # Transcription and summarization APIs (ingest_chunk / finalize_stream / summary ...)
 
-uploads/ # 執行後產物（每個錄音 base 一個資料夾）
+uploads/ # Generated outputs (each recording has a separate folder)
 └─ <base_name>/
 ├─ base.wav
 ├─ transcript.json
 ├─ summary.json
-└─ stream_chunks/ # 001.wav, 002.wav, ...（保留）
+└─ stream_chunks/ # 001.wav, 002.wav, ... (retained)
 ```
----
 
-## 快速開始
 
-### 後端
+
+## Quick Start
+
+### Backend
 Pre.
-請先依照網站指示安裝 Turu for Qualcomm AI Hackathon
+Please first follow the instructions on the website to install Turu for Qualcomm AI Hackathon:
 https://turu.thuniverse.ai/download/turu-25h1-wos/
 
-1. 建立虛擬環境並安裝依賴 (Python 3.10.8)
+1. Create a virtual environment and install dependencies (Python 3.10.8)
    ```bash
    python -m venv venv
    # Windows
-   venv\Scripts\activate
-   pip install -r requirements.txt   # fastapi uvicorn pydub python-multipart 等
+   venv\Scriptsctivate
+   pip install -r requirements.txt   # fastapi uvicorn pydub python-multipart etc.
    ```
-2. 安裝 ffmpeg 並確保在 PATH（pydub 需要）。
+2. Install ffmpeg and ensure it’s in the PATH (required by pydub).
 
-3. 打開 Turu 平台
+3. Open the Turu platform.
 
-4. 啟動後端
+4. Start the backend:
     ```bash
    uvicorn app.main:app --reload
    ```
-### 前端
 
-- 使用 Visual Studio 2022（含 .NET 8、Windows App SDK/WinUI 3 工作負載）開啟 ConferenceAssistant，F5 執行。
+### Frontend
 
-- 依程式設定，預設呼叫 http://127.0.0.1:8000 後端。
+- Open **ConferenceAssistant** in **Visual Studio 2022** (with .NET 8 and Windows App SDK/WinUI 3 workload) and run with F5.
 
----
-
-## 後端-api
+- By default, the frontend will call the backend at `http://127.0.0.1:8000`.
 
 
-| Method & Path            | 說明                                                                 | 參數（Query / Body）                                                                 | 回傳（摘要）                                                          |
-|--------------------------|----------------------------------------------------------------------|--------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| **POST** `/ingest_chunk` | 上傳一段 20s WAV、即時 upsert 該段到 JSON                            | Query：`base_name`, `index` ；Body：`multipart/form-data` 欄位 `file`               | `{ index, start, end, text, summary }`                                |
-| **POST** `/finalize_stream` | 停止錄音：串接 `stream_chunks/` → `base.wav` → 記憶體切段 → 覆蓋 JSON | Query：`base_name`                                                                   | `{ filename, base_name, status, paths }`                              |
-| **GET** `/summary`       | 取得整體摘要與每段摘要                                               | Query：`base_name`                                                                   | `{ overall_summary, per_segment: [{ index, summary }], ... }`         |
-| **GET** `/segment_at`    | 取得時間點所屬段落                                                   | Query：`base_name`, `t`                                                              | `{ index, start, end, text, summary }`                                |
-| **GET** `/segments_in_range` | 取得區間內所有段落                                               | Query：`base_name`, `start`, `end`                                                   | `{ range, segments: [...] }`                                          |
+
+## Backend API
+
+| Method & Path            | Description                                                              | Parameters (Query / Body)                                                            | Response (Summary)                                                       |
+|--------------------------|--------------------------------------------------------------------------|---------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| **POST** `/ingest_chunk` | Upload a 20s WAV chunk and upsert it to JSON in real-time                 | Query: `base_name`, `index`; Body: `multipart/form-data` field `file`                 | `{ index, start, end, text, summary }`                                   |
+| **POST** `/finalize_stream` | Stop recording: concatenate `stream_chunks/` → `base.wav` → segment memory → overwrite JSON | Query: `base_name`                                                                    | `{ filename, base_name, status, paths }`                                 |
+| **GET** `/summary`       | Get the overall summary and per-segment summaries                         | Query: `base_name`                                                                    | `{ overall_summary, per_segment: [{ index, summary }], ... }`            |
+| **GET** `/segment_at`    | Get the segment for a specific timestamp                                  | Query: `base_name`, `t`                                                               | `{ index, start, end, text, summary }`                                   |
+| **GET** `/segments_in_range` | Get all segments in a specified range                                  | Query: `base_name`, `start`, `end`                                                    | `{ range, segments: [...] }`                                             |
 
 
----
-
-## 資料格式
+## Data Formats
 
 ### `transcript.json`
 
@@ -133,7 +134,7 @@ https://turu.thuniverse.ai/download/turu-25h1-wos/
 }
 ```
 
-###summary.json
+### `summary.json`
 ```json
 {
   "base_name": "recording_20250814_015628",
@@ -146,49 +147,53 @@ https://turu.thuniverse.ai/download/turu-25h1-wos/
   ]
 }
 ```
----
 
-## 前端關鍵檔案與流程
 
-### 重要檔案
+## Frontend Key Files and Flow
+
+### Key Files
 
 - **`ViewModels/MainViewModel.cs`**  
-  核心狀態、播放/跳段、`SmartSummary` 計算、呼叫 `/summary`、`/segment_at`，停止錄音後觸發 `finalize_stream`。
+  Core states, playback/segment skipping, `SmartSummary` calculation, calls to `/summary`, `/segment_at`, and triggers `finalize_stream` after stopping the recording.
 
 - **`ViewModels/MainViewModel.Streaming.cs`**  
-  即時上傳：每湊滿 **20s** 的原始 bytes → 以 `WaveFileWriter` 包成 WAV → `POST /ingest_chunk`。  
-  上傳後立即顯示該段**轉錄**；**1 秒後**呼叫 `/summary`，只取 `per_segment` 的**最大 `index`** 進行更新：
-  - `CurrentSegmentSummary`（右側摘要卡）
-  - `SegmentSummaries`（清單；Upsert；維持排序）  
-  所有 UI 更新透過 `_dispatcherQueue.TryEnqueue(...)` 進行。
+  Real-time upload: Every time **20s** of raw bytes are collected → package as WAV using `WaveFileWriter` → `POST /ingest_chunk`.  
+  After upload, it immediately shows the **transcription** for the segment; **1 second later**, it calls `/summary`, updating the display with the **maximum `index`** from `per_segment`:
+  - `CurrentSegmentSummary` (right-side summary card)
+  - `SegmentSummaries` (list; Upsert; maintains order)  
+  All UI updates are done via `_dispatcherQueue.TryEnqueue(...)`.
 
 - **`Controls/RecordingStatusControl.xaml(.cs)`**  
-  錄音狀態視覺元件：樣式切換、動畫與狀態文字。
+  Visual component for recording status: style switching, animations, and status text.
 
 - **`Models/ConferenceRecordDto.cs`**  
-  後端 API 對應模型（`ApiSegment`、`ApiSummary` 等）與清單項目 `SegmentSummaryItem`。
+  Models corresponding to the backend API (e.g., `ApiSegment`, `ApiSummary`) and list items `SegmentSummaryItem`.
   
-### 即時流程（圖）
+### Real-Time Flow (Diagram)
 
 ```text
 flowchart LR
-  A[NAudio 錄音] -->|20s/段, 2s overlap| B[封裝 WAV (WaveFileWriter)]
+  A[NAudio Recording] -->|20s/segment, 2s overlap| B[Package WAV (WaveFileWriter)]
   B --> C[POST /ingest_chunk]
-  C -->|即時 upsert| D[transcript.json & summary.json]
-  C -->|回 segment| E[UI 立即顯示本段轉錄]
-  E --> F[延遲 1 秒 GET /summary]
-  F -->|per_segment 最大 index| G[CurrentSegmentSummary & SegmentSummaries]
-  A -->|停止| H[POST /finalize_stream]
-  H -->|stream_chunks → base.wav → 記憶體切段| D
+  C -->|Real-time upsert| D[transcript.json & summary.json]
+  C -->|Return segment| E[UI immediately displays the transcription]
+  E --> F[Delay 1 second GET /summary]
+  F -->|Max index from per_segment| G[CurrentSegmentSummary & SegmentSummaries]
+  A -->|Stop| H[POST /finalize_stream]
+  H -->|stream_chunks → base.wav → memory segmentation| D
 ```
----
-## 設定
 
-- 片段規格：`CHUNK_SECONDS = 20`、`OVERLAP_SECONDS = 2`（前後端需一致）
-- 音訊規格：`base.wav` 統一為 `16 kHz / mono / 16-bit PCM`
-- 上傳資料夾：`uploads/<base_name>/`
-- 環境檔：可於 `.env` 或程式碼調整主機/連接埠/路徑
 
----
+
+## Configuration
+
+- Segment Specifications: `CHUNK_SECONDS = 20`, `OVERLAP_SECONDS = 2` (must match between frontend and backend)
+- Audio Specifications: `base.wav` set to `16 kHz / mono / 16-bit PCM`
+- Upload Folder: `uploads/<base_name>/`
+- Environment File: Configure host/port/path in `.env` or programmatically
+
+
+
 ## License
+
 [Apache License](LICENSE)
