@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>LAPTOP-3304L4PK</Machine>
+    <WindowsUser>circl</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>02e4fabc-d00c-4d84-8824-67104d2a74ff</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Xiaoyong</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\circl\Desktop\ConferenceAssistant-main\ConferenceAssistant-main\ConferenceAssistant_fix\obj\x64\Debug\net8.0-windows10.0.19041.0\</IntermediateOutputPath>
+    <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\circl\Desktop\ConferenceAssistant-main\ConferenceAssistant-main\ConferenceAssistant_fix\bin\x64\Debug\net8.0-windows10.0.19041.0\AppX</LayoutDir>
+    <RegisteredManifestChecksum>4C08983AB25E59505336E8E754AE0A206CCC7CB59849046A74485F748666C565</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>02e4fabc-d00c-4d84-8824-67104d2a74ff_1.0.0.0_x64__209hfk841wx2e</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>02e4fabc-d00c-4d84-8824-67104d2a74ff_209hfk841wx2e!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>02e4fabc-d00c-4d84-8824-67104d2a74ff</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Xiaoyong</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\circl\Desktop\ConferenceAssistant-main\ConferenceAssistant-main\ConferenceAssistant_fix\bin\x64\Debug\net8.0-windows10.0.19041.0\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2025-08-11T01:03:14.436</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\circl\Desktop\ConferenceAssistant-main\ConferenceAssistant-main\ConferenceAssistant_fix\bin\x64\Debug\net8.0-windows10.0.19041.0\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2025-08-11T01:03:14.285</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\Desktop\ConferenceAssistant-main\ConferenceAssistant-main\ConferenceAssistant_fix\bin\x64\Debug\net8.0-windows10.0.19041.0\ConferenceAssistant_fix.runtimeconfig.json">
+      <PackagePath>ConferenceAssistant_fix.runtimeconfig.json</PackagePath>
+      <Modified>2025-08-11T01:03:14.056</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\Desktop\ConferenceAssistant-main\ConferenceAssistant-main\ConferenceAssistant_fix\bin\x64\Debug\net8.0-windows10.0.19041.0\ConferenceAssistant_fix.dll">
+      <PackagePath>ConferenceAssistant_fix.dll</PackagePath>
+      <Modified>2025-08-11T01:03:13.652</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\Desktop\ConferenceAssistant-main\ConferenceAssistant-main\ConferenceAssistant_fix\obj\x64\Debug\net8.0-windows10.0.19041.0\apphost.exe">
+      <PackagePath>ConferenceAssistant_fix.exe</PackagePath>
+      <Modified>2025-08-11T01:03:13.708</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
+      <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
+      <Modified>2024-11-11T17:23:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\WinRT.Runtime.dll">
+      <PackagePath>WinRT.Runtime.dll</PackagePath>
+      <Modified>2024-11-11T17:23:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Graphics.Imaging.Projection.dll">
+      <PackagePath>Microsoft.Graphics.Imaging.Projection.dll</PackagePath>
+      <Modified>2025-05-13T21:41:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
+      <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
+      <Modified>2025-05-30T01:21:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Security.Authentication.OAuth.Projection.dll">
+      <PackagePath>Microsoft.Security.Authentication.OAuth.Projection.dll</PackagePath>
+      <Modified>2025-06-05T21:49:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.WinUI.dll">
+      <PackagePath>Microsoft.WinUI.dll</PackagePath>
+      <Modified>2025-06-06T05:07:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AI.ContentSafety.Projection.dll">
+      <PackagePath>Microsoft.Windows.AI.ContentSafety.Projection.dll</PackagePath>
+      <Modified>2025-05-13T21:41:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AI.Imaging.Projection.dll">
+      <PackagePath>Microsoft.Windows.AI.Imaging.Projection.dll</PackagePath>
+      <Modified>2025-05-13T21:41:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AI.Projection.dll">
+      <PackagePath>Microsoft.Windows.AI.Projection.dll</PackagePath>
+      <Modified>2025-05-13T21:41:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AI.Text.Projection.dll">
+      <PackagePath>Microsoft.Windows.AI.Text.Projection.dll</PackagePath>
+      <Modified>2025-05-13T21:41:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppLifecycle.Projection.dll">
+      <PackagePath>Microsoft.Windows.AppLifecycle.Projection.dll</PackagePath>
+      <Modified>2025-06-05T21:49:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppNotifications.Builder.Projection.dll">
+      <PackagePath>Microsoft.Windows.AppNotifications.Builder.Projection.dll</PackagePath>
+      <Modified>2025-06-05T21:49:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppNotifications.Projection.dll">
+      <PackagePath>Microsoft.Windows.AppNotifications.Projection.dll</PackagePath>
+      <Modified>2025-06-05T21:49:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.Background.Projection.dll">
+      <PackagePath>Microsoft.Windows.ApplicationModel.Background.Projection.dll</PackagePath>
+      <Modified>2025-06-05T21:49:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll">
+      <PackagePath>Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll</PackagePath>
+      <Modified>2025-06-05T21:49:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.Resources.Projection.dll">
+      <PackagePath>Microsoft.Windows.ApplicationModel.Resources.Projection.dll</PackagePath>
+      <Modified>2025-06-05T21:50:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll">
+      <PackagePath>Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll</PackagePath>
+      <Modified>2025-06-05T21:49:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.BadgeNotifications.Projection.dll">
+      <PackagePath>Microsoft.Windows.BadgeNotifications.Projection.dll</PackagePath>
+      <Modified>2025-06-05T21:49:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.Management.Deployment.Projection.dll">
+      <PackagePath>Microsoft.Windows.Management.Deployment.Projection.dll</PackagePath>
+      <Modified>2025-06-05T21:49:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.Media.Capture.Projection.dll">
+      <PackagePath>Microsoft.Windows.Media.Capture.Projection.dll</PackagePath>
+      <Modified>2025-06-05T21:49:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.PushNotifications.Projection.dll">
+      <PackagePath>Microsoft.Windows.PushNotifications.Projection.dll</PackagePath>
+      <Modified>2025-06-05T21:49:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.Security.AccessControl.Projection.dll">
+      <PackagePath>Microsoft.Windows.Security.AccessControl.Projection.dll</PackagePath>
+      <Modified>2025-06-05T21:49:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.Storage.Projection.dll">
+      <PackagePath>Microsoft.Windows.Storage.Projection.dll</PackagePath>
+      <Modified>2025-06-05T21:49:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.System.Power.Projection.dll">
+      <PackagePath>Microsoft.Windows.System.Power.Projection.dll</PackagePath>
+      <Modified>2025-06-05T21:49:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.System.Projection.dll">
+      <PackagePath>Microsoft.Windows.System.Projection.dll</PackagePath>
+      <Modified>2025-06-05T21:49:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.Widgets.Projection.dll">
+      <PackagePath>Microsoft.Windows.Widgets.Projection.dll</PackagePath>
+      <Modified>2025-05-22T21:56:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
+      <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
+      <Modified>2025-06-05T21:50:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\naudio\2.2.1\lib\net6.0-windows7.0\NAudio.dll">
+      <PackagePath>NAudio.dll</PackagePath>
+      <Modified>2023-09-04T19:49:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\naudio.asio\2.2.1\lib\netstandard2.0\NAudio.Asio.dll">
+      <PackagePath>NAudio.Asio.dll</PackagePath>
+      <Modified>2023-09-04T19:49:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\naudio.core\2.2.1\lib\netstandard2.0\NAudio.Core.dll">
+      <PackagePath>NAudio.Core.dll</PackagePath>
+      <Modified>2023-09-04T19:49:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\naudio.midi\2.2.1\lib\netstandard2.0\NAudio.Midi.dll">
+      <PackagePath>NAudio.Midi.dll</PackagePath>
+      <Modified>2023-09-04T19:49:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\naudio.wasapi\2.2.1\lib\netstandard2.0\NAudio.Wasapi.dll">
+      <PackagePath>NAudio.Wasapi.dll</PackagePath>
+      <Modified>2023-09-04T19:49:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\naudio.winforms\2.2.1\lib\netcoreapp3.1\NAudio.WinForms.dll">
+      <PackagePath>NAudio.WinForms.dll</PackagePath>
+      <Modified>2023-09-04T19:49:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\naudio.winmm\2.2.1\lib\netstandard2.0\NAudio.WinMM.dll">
+      <PackagePath>NAudio.WinMM.dll</PackagePath>
+      <Modified>2023-09-04T19:49:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.web.webview2\1.0.2903.40\runtimes\win-arm64\native\WebView2Loader.dll">
+      <PackagePath>runtimes\win-arm64\native\WebView2Loader.dll</PackagePath>
+      <Modified>2024-11-10T08:57:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.web.webview2\1.0.2903.40\runtimes\win-x64\native\WebView2Loader.dll">
+      <PackagePath>runtimes\win-x64\native\WebView2Loader.dll</PackagePath>
+      <Modified>2024-11-10T08:57:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.web.webview2\1.0.2903.40\runtimes\win-x86\native\WebView2Loader.dll">
+      <PackagePath>runtimes\win-x86\native\WebView2Loader.dll</PackagePath>
+      <Modified>2024-11-10T08:57:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\runtimes\win-arm64\native\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll">
+      <PackagePath>runtimes\win-arm64\native\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll</PackagePath>
+      <Modified>2025-06-05T21:49:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\runtimes\win-arm64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
+      <PackagePath>runtimes\win-arm64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
+      <Modified>2025-06-05T21:49:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\runtimes\win-arm64ec\native\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll">
+      <PackagePath>runtimes\win-arm64ec\native\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll</PackagePath>
+      <Modified>2025-06-05T21:49:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\runtimes\win-arm64ec\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
+      <PackagePath>runtimes\win-arm64ec\native\Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
+      <Modified>2025-06-05T21:49:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\runtimes\win-x64\native\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll">
+      <PackagePath>runtimes\win-x64\native\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll</PackagePath>
+      <Modified>2025-06-05T21:49:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\runtimes\win-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
+      <PackagePath>runtimes\win-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
+      <Modified>2025-06-05T21:49:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\runtimes\win-x86\native\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll">
+      <PackagePath>runtimes\win-x86\native\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll</PackagePath>
+      <Modified>2025-06-05T21:49:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\runtimes\win-x86\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
+      <PackagePath>runtimes\win-x86\native\Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
+      <Modified>2025-06-05T21:49:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.web.webview2\1.0.2903.40\runtimes\win-x64\native_uap\Microsoft.Web.WebView2.Core.dll">
+      <PackagePath>Microsoft.Web.WebView2.Core.dll</PackagePath>
+      <Modified>2024-11-10T08:58:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\.nuget\packages\microsoft.web.webview2\1.0.2903.40\lib_manual\net8.0-windows10.0.17763.0\Microsoft.Web.WebView2.Core.Projection.dll">
+      <PackagePath>Microsoft.Web.WebView2.Core.Projection.dll</PackagePath>
+      <Modified>2024-11-10T08:57:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\Desktop\ConferenceAssistant-main\ConferenceAssistant-main\ConferenceAssistant_fix\bin\x64\Debug\net8.0-windows10.0.19041.0\ConferenceAssistant_fix.deps.json">
+      <PackagePath>ConferenceAssistant_fix.deps.json</PackagePath>
+      <Modified>2025-08-11T01:03:13.912</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\Desktop\ConferenceAssistant-main\ConferenceAssistant-main\ConferenceAssistant_fix\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2025-08-11T00:45:47.050</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\Desktop\ConferenceAssistant-main\ConferenceAssistant-main\ConferenceAssistant_fix\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <Modified>2025-08-11T00:45:47.055</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\Desktop\ConferenceAssistant-main\ConferenceAssistant-main\ConferenceAssistant_fix\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <Modified>2025-08-11T00:45:47.060</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\Desktop\ConferenceAssistant-main\ConferenceAssistant-main\ConferenceAssistant_fix\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <Modified>2025-08-11T00:45:47.066</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\Desktop\ConferenceAssistant-main\ConferenceAssistant-main\ConferenceAssistant_fix\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <Modified>2025-08-11T00:45:47.071</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\Desktop\ConferenceAssistant-main\ConferenceAssistant-main\ConferenceAssistant_fix\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <Modified>2025-08-11T00:45:47.077</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\circl\Desktop\ConferenceAssistant-main\ConferenceAssistant-main\ConferenceAssistant_fix\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <Modified>2025-08-11T00:45:47.082</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.7.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.7</Name>
+      <Version>7000.522.1444.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.7, MinVersion = 7000.522.1444.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.7.msix</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.7.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.7</Name>
+      <Version>7000.522.1444.0</Version>
+      <Architecture>win32</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.7, MinVersion = 7000.522.1444.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.7.msix</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\buildTransitive\..\tools\MSIX\win10-x64\Microsoft.WindowsAppRuntime.1.7.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.7</Name>
+      <Version>7000.522.1444.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.7, MinVersion = 7000.522.1444.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\buildTransitive\..\tools\MSIX\win10-x64\Microsoft.WindowsAppRuntime.1.7.msix</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\buildTransitive\..\tools\MSIX\win10-arm64\Microsoft.WindowsAppRuntime.1.7.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.7</Name>
+      <Version>7000.522.1444.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.7, MinVersion = 7000.522.1444.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\circl\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\buildTransitive\..\tools\MSIX\win10-arm64\Microsoft.WindowsAppRuntime.1.7.msix</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "bRQlErJ0jTw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\circl\\Desktop\\ConferenceAssistant-main\\ConferenceAssistant-main\\ConferenceAssistant_fix\\ConferenceAssistant_fix.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\circl\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\microsoft.web.webview2\\1.0.2903.40\\microsoft.web.webview2.1.0.2903.40.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.26100.4654\\microsoft.windows.sdk.buildtools.10.0.26100.4654.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\microsoft.windowsappsdk\\1.7.250606001\\microsoft.windowsappsdk.1.7.250606001.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\naudio\\2.2.1\\naudio.2.2.1.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\naudio.asio\\2.2.1\\naudio.asio.2.2.1.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\naudio.core\\2.2.1\\naudio.core.2.2.1.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\naudio.midi\\2.2.1\\naudio.midi.2.2.1.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\naudio.wasapi\\2.2.1\\naudio.wasapi.2.2.1.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\naudio.winforms\\2.2.1\\naudio.winforms.2.2.1.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\naudio.winmm\\2.2.1\\naudio.winmm.2.2.1.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm64\\8.0.18\\microsoft.aspnetcore.app.runtime.win-arm64.8.0.18.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.18\\microsoft.aspnetcore.app.runtime.win-x64.8.0.18.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\8.0.18\\microsoft.aspnetcore.app.runtime.win-x86.8.0.18.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\8.0.18\\microsoft.netcore.app.runtime.win-arm64.8.0.18.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.18\\microsoft.netcore.app.runtime.win-x64.8.0.18.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\8.0.18\\microsoft.netcore.app.runtime.win-x86.8.0.18.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\8.0.18\\microsoft.windowsdesktop.app.runtime.win-arm64.8.0.18.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.18\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.18.nupkg.sha512",
+    "C:\\Users\\circl\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\8.0.18\\microsoft.windowsdesktop.app.runtime.win-x86.8.0.18.nupkg.sha512"
+  ],
+  "logs": []
+}

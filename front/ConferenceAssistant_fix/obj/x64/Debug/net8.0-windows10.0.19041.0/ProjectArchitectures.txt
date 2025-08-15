@@ -1,0 +1,1 @@
+C:\Users\circl\Desktop\ConferenceAssistant-main\ConferenceAssistant-main\ConferenceAssistant_fix\ConferenceAssistant_fix.csproj;x64

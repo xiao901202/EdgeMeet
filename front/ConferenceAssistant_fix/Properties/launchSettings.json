@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ConferenceAssistant_fix (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ConferenceAssistant_fix (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
