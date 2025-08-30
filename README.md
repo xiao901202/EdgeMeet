@@ -130,9 +130,8 @@ https://turu.thuniverse.ai/download/turu-25h1-wos/
 - By default, the frontend will call the backend at `http://127.0.0.1:8000`.
 
 ## How to Use
-
-### 1. Start a New Recording
 ![how_record](public/images/new_record.png)
+### 1. Start a New Recording
 - Select input/output devices  
 - Click **"Start Recording"** → instantly shows volume indicator and waveform  
 - Every **20 seconds**, a transcript segment is generated and the latest summary is displayed  
@@ -147,13 +146,12 @@ https://turu.thuniverse.ai/download/turu-25h1-wos/
 
 ### 4. Playback Controls
 - Play / Pause, Fast Forward / Rewind  
-- Drag the progress bar to jump to a segment, summary updates accordingly  
-- Click transcript segments or search results to jump to the corresponding time  
+- Drag the progress bar to jump to a segment, summary updates accordingly   
 
 ### 5. Search & Highlight
 - Enter a keyword in the search box to show related segments in **transcript** and **summary**  
 - Keywords are automatically highlighted (yellow)  
-- Click to jump and play  
+- Click search results to jump to the corresponding time 
 
 ### 6. Export
 - Export transcript or summary as `.txt` files  
