@@ -17,6 +17,7 @@ This project was developed for the **Qualcomm Edge AI Developer Hackathon**.
 - [Features](#features)
 - [Project Structure](#project-structure)
 - [Quick Start](#quick-start)
+- [How to Use](#how-to-use)
 - [Backend API](#backend-api)
 - [Data Formats](#data-formats)
 - [Frontend Key Files and Flow](#frontend-key-files-and-flow)
@@ -120,12 +121,41 @@ https://turu.thuniverse.ai/download/turu-25h1-wos/
    ```bash
    uvicorn app.main:app --reload
    ```
+   
 
 ### Frontend
 
 - Open **ConferenceAssistant** in **Visual Studio 2022** (with .NET 8 and Windows App SDK/WinUI 3 workload) and run with F5.
 
 - By default, the frontend will call the backend at `http://127.0.0.1:8000`.
+
+## How to Use
+
+### 1. Start a New Recording
+- Select input/output devices  
+- Click **"Start Recording"** → instantly shows volume indicator and waveform  
+- Every **20 seconds**, a transcript segment is generated and the latest summary is displayed  
+
+### 2. Stop Recording
+- Recording is automatically merged into `base.wav`  
+- Updates full transcript `transcript.json` and summary `summary.json`  
+
+### 3. Upload Audio File
+- Supports importing `.wav` / `.mp3` / `.m4a` / `.flac` files  
+- System automatically uploads → transcribes → displays transcript and summary  
+
+### 4. Playback Controls
+- Play / Pause, Fast Forward / Rewind  
+- Drag the progress bar to jump to a segment, summary updates accordingly  
+- Click transcript segments or search results to jump to the corresponding time  
+
+### 5. Search & Highlight
+- Enter a keyword in the search box to show related segments in **transcript** and **summary**  
+- Keywords are automatically highlighted (yellow)  
+- Click to jump and play  
+
+### 6. Export
+- Export transcript or summary as `.txt` files  
 
 ## Backend API
 
