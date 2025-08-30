@@ -36,19 +36,24 @@ This project was developed for the **Qualcomm Edge AI Developer Hackathon**.
 
 ```text
 ConferenceAssistant/
-├─ Assets/
+├─ Assets/ # Icon resource file
 ├─ Controls/
-│  └─ RecordingStatusControl.xaml(.cs)
+│ └─ RecordingStatusControl.xaml(.cs) # Recording status display
 ├─ Converters/
-│  └─ ValueConverters.cs
+│ └─ ValueConverters.cs # Common converters
 ├─ Models/
-│  ├─ ConferenceRecordDto.cs
-│  └─ IndexedSample.cs
+│ ├─ ConferenceRecordDto.cs # Data model & backend API DTO
+│ └─ SearchResultItem.cs # Search result data structure (including keyword highlighting)
 ├─ ViewModels/
-│  ├─ MainViewModel.cs
-│  └─ MainViewModel.Streaming.cs
-├─ App.xaml(.cs)
-└─ MainWindow.xaml(.cs)
+│ ├─ MainViewModel.cs
+│ │ # Core logic: recording, playback control, conference management, search
+│ └─ MainViewModel.Streaming.cs # Streaming processing: real-time transcription/summary display
+├─ Behaviors/
+│ └─ HighlightBehavior.cs # Highlight search keywords in yellow
+├─ App.xaml(.cs) # Application startup settings
+├─ ThemeWatcher.cs # Follow the Windows theme background
+├─ MainWindow.xaml # Front-end UI layout
+└─ MainWindow.xaml.cs # UI interaction logic (progress bar dragging, theme color synchronization)
 ```
 
 ### Backend (FastAPI)
