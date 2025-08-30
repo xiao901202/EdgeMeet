@@ -142,7 +142,9 @@ https://turu.thuniverse.ai/download/turu-25h1-wos/
 
 ### 3. Upload Audio File
 - Supports importing `.wav` / `.mp3` / `.m4a` / `.flac` files  
-- System automatically uploads → transcribes → displays transcript and summary  
+- System automatically uploads → transcribes → displays transcript and summary
+
+![search](public/images/search.png)
 
 ### 4. Playback Controls
 - Play / Pause, Fast Forward / Rewind  
