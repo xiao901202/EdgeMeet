@@ -132,6 +132,7 @@ https://turu.thuniverse.ai/download/turu-25h1-wos/
 ## How to Use
 
 ### 1. Start a New Recording
+![how_record](public/images/new_record.png)
 - Select input/output devices  
 - Click **"Start Recording"** → instantly shows volume indicator and waveform  
 - Every **20 seconds**, a transcript segment is generated and the latest summary is displayed  
