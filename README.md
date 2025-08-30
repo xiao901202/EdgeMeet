@@ -24,12 +24,35 @@ This project was developed for the **Qualcomm Edge AI Developer Hackathon**.
 
 ## Features
 
-- 🎙️ **Recording (NAudio)**: Device selection, start/stop, playback, segment seeking, and playback progress synchronization.
-- ⚡ **Real-time Upload**: Uploads every 20 seconds (with a **2s overlap** with the previous segment).
-- 🧩 **Real-time Summarization**: After successful upload, **delays 1 second** to read `/summary` and only takes the maximum index from `per_segment` for the current segment's summary.
-- 🧾 **Full Output**: After stopping the recording → connects `stream_chunks/` → generates `base.wav` → **memory segmentation** → overwrites `transcript.json` / `summary.json`.
-- 🧠 **Smart Summary Display**: Displays "current segment summary" while recording/playing, and "overall summary" at other times.
-
+- 🎙️ **Audio Recording**:
+   - Supports microphone recording, system audio recording (loopback), and simultaneous recording mode (microphone + background audio from headphones/speakers)
+   - Selectable input/output devices (including AirPods, speakers, and monitor audio)
+   - Playback support
+      - Play/Pause
+      - Fast forward/rewind
+      - Drag the progress bar to skip segments
+- 🧾 **Meeting Data Management**:
+   - After stopping recording, the following files are automatically generated:
+      - base.wav (full recording)
+      - transcript.json (paragraph-by-paragraph transcript)
+      - summary.json (overall summary + paragraph summaries)
+   - Supports renaming/deleting meeting records
+   - Exports transcripts (.txt) or summaries (.txt)
+- 🔍 **Full-text search**:
+   - Search both transcripts and summaries
+   - Search results automatically highlight keywords (yellow background)
+   - Click a result to jump to the corresponding time segment
+- 🎨 **Interface Features**:
+   - Real-time waveform display (supports playback progress tracking)
+   - Automatically adjusts the interface and title bar colors based on the Windows system theme color
+   - Red breathing light animation during recording for clear status
+- 🧠 **Smart Summary Display**:
+   - During playback or recording: Displays a "Current Segment Cumulative Summary"
+   - After stopping: Displays a "Full Overall Summary"
+- ⚡ **Instant Upload**:
+   - Automatically uploads every 20 seconds of recording, overlapping the previous segment by 2 seconds.
+   - After a successful upload, the transcript of the segment is immediately displayed, and the segment summary is automatically updated.
+     
 ## Project Structure
 
 ### Frontend (WinUI 3)
